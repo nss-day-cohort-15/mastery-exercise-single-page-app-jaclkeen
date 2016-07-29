@@ -1,0 +1,49 @@
+{
+  "cars": [
+    {
+      "make": "Chevy",
+      "model": "Colorado",
+      "year": "2010",
+      "price": "20,999",
+      "color": "Black",
+      "purchased": false,
+      "description": "Super strong."
+    },
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8,999",
+      "color": "FireBrick",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Ford",
+      "model": "Mustang",
+      "year": "2009",
+      "price": "12,999",
+      "color": "Red",
+      "purchased": false,
+      "description": "Super fast."
+    },
+    {
+      "make": "Mercury",
+      "model": "POS",
+      "year": "2014",
+      "price": "20,999",
+      "color": "Green",
+      "purchased": false,
+      "description": "Gas Saver."
+    },
+    {
+      "make": "Toyota",
+      "model": "Tacoma",
+      "year": "2016",
+      "price": "35,999",
+      "color": "Tan",
+      "purchased": false,
+      "description": "Strong and durable."
+    }
+  ]
+}
