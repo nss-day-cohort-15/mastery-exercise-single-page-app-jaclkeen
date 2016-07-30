@@ -9,21 +9,25 @@
   <div class="container">
     <h1>Let's Buy a Car</h1><br><br>
     <nav>
-      <input type="text" class="" id="input" name="input">
+      <textarea class="input" id="input" name="input"></textarea>
       <input type="button" class="btn btn-primary" value="Submit" id="submit">
     </nav><br>
 
+    <div class="banner">
+      <p class="instructions">Double click on the description to change it in the box above!</p>
+    </div><br>
     <table class="table">
       <thead class="thead">
         <tr class="row">
           <th class="col-lg-2">Make</th>
           <th class="col-lg-2">Model</th>
           <th class="col-lg-2">Year</th>
-          <th class="col-lg-2">Price</th>
-          <th class="col-lg-2">Color</th>
+          <th class="col-lg-1">Price</th>
+          <th class="col-lg-1">Color</th>
           <th class="col-lg-2">Availability</th>
+          <th class="col-lg-3">Description</th>
         </tr>
-      <tbody class="t_body">
+      <tbody class="t_body" id="t_body">
           <!-- JSON DATA GOES HERE -->
       </tbody>
       </thead>

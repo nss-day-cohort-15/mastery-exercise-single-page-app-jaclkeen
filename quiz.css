@@ -11,6 +11,30 @@ h1{
   color: white;
 }
 
+.banner{
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+
+.instructions{
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.input{
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 20%;
+  height: 50px;
+  margin-right: 5%;
+}
+
+.submit{
+  margin-bottom: 15%;
+}
+
 .thead{
   background-color: #191919;
   color: white;
@@ -19,7 +43,6 @@ h1{
 
 table{
   box-shadow: 7px 7px 7px #888888;
-
 }
 
 .col-lg-2{
