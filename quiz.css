@@ -53,9 +53,18 @@ th{
   font-size: 1.5em;
 }
 
+.selected{
+  border: 5px solid black;
+}
+
 td{
   font-size: 1.3em;
   cursor: pointer;
+  /*PREVENTS HIGHLIGHTING ON DOUBLE CLICK*/
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none;
 }
 
 input[type="text"]{

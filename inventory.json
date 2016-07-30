@@ -52,7 +52,16 @@
       "price": "42,999",
       "color": "Grey",
       "purchased": false,
-      "description": "Luxurious"
+      "description": "Luxurious."
+    },
+    {
+      "make": "Rolls Royce",
+      "model": "Ghost",
+      "year": "2009",
+      "price": "329,999",
+      "color": "Orange",
+      "purchased": false,
+      "description": "Too expensive for you."
     }
   ]
 }

@@ -33,12 +33,16 @@ function eventListeners(vehicle){
 
   td.addEventListener("dblclick", function(e){
     if(e.target.id === 'description'){
+      e.target.classList.toggle("selected");
       input.value = e.target.innerHTML;
-      submit.addEventListener("click", function(){
-        e.target.innerHTML = input.value;
-      })
     }
-})
+      submit.addEventListener("click", function(){
+        if(e.target.id === 'description'){
+          e.target.innerHTML = input.value;
+        }
+      })
+  })
+
   vehicle.addEventListener("click", function(e){
     e.target.classList.toggle("active");
   })
