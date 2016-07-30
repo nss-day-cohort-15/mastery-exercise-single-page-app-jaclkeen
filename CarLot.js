@@ -35,10 +35,12 @@ function eventListeners(vehicle){
     if(e.target.id === 'description'){
       e.target.classList.toggle("selected");
       input.value = e.target.innerHTML;
+      input.focus();
     }
       submit.addEventListener("click", function(){
         if(e.target.id === 'description'){
           e.target.innerHTML = input.value;
+          e.target.classList.toggle("selected");
         }
       })
   })
