@@ -1,14 +1,7 @@
-.row{
-  text-align: center;
-}
-
 h1{
-  border: 3px solid black;
   display: inline-block;
   padding: .7%;
-  border-radius: 15px;
-  background-color: black;
-  color: white;
+  font-size: 3em;
 }
 
 .banner{
@@ -35,36 +28,8 @@ h1{
   margin-bottom: 15%;
 }
 
-.thead{
-  background-color: #191919;
-  color: white;
-  border: 3px solid black;
-}
-
-table{
-  box-shadow: 7px 7px 7px #888888;
-}
-
-.col-lg-2{
-  text-align: center;
-}
-
-th{
-  font-size: 1.5em;
-}
-
 .selected{
-  border: 5px solid black;
-}
-
-td{
-  font-size: 1.3em;
-  cursor: pointer;
-  /*PREVENTS HIGHLIGHTING ON DOUBLE CLICK*/
-  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
-  -moz-user-select: none; /* mozilla browsers */
-  -khtml-user-select: none; /* webkit (konqueror) browsers */
-  -ms-user-select: none;
+  border: 3px solid black;
 }
 
 input[type="text"]{
@@ -76,9 +41,26 @@ input[type="text"]{
 }
 
 .active{
+  display: inline-block;
   background-color: grey !important;
   color: white;
   border: 3px solid black;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.selected{
+  background-color: grey !important;
+  color: white;
+  border: 3px solid black;
+  box-shadow: 5px 5px 5px black;
   padding-right: 5%;
   padding-left: 5%;
+}
+
+div.row{
+  display: inline-block;
+  max-width: 45%;
+  margin: 1%;
+  padding: .5%;
 }

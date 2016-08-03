@@ -1,15 +1,6 @@
 {
   "cars": [
     {
-      "make": "Chevy",
-      "model": "Colorado",
-      "year": "2010",
-      "price": "20,999",
-      "color": "Black",
-      "purchased": false,
-      "description": "Super strong."
-    },
-    {
       "make": "Nissan",
       "model": "Rogue",
       "year": "2006",
@@ -17,6 +8,15 @@
       "color": "FireBrick",
       "purchased": false,
       "description": "Well, it runs."
+    },
+    {
+      "make": "Chevy",
+      "model": "Colorado",
+      "year": "2010",
+      "price": "20,999",
+      "color": "Black",
+      "purchased": false,
+      "description": "Super strong."
     },
     {
       "make": "Ford",
@@ -57,7 +57,7 @@
     {
       "make": "Rolls Royce",
       "model": "Ghost",
-      "year": "2009",
+      "year": "2016",
       "price": "329,999",
       "color": "Orange",
       "purchased": false,
