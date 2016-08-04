@@ -18,7 +18,8 @@ carLot = (function(){
 
   return {
     loadCar: loadInventory,
-    add: addToArray
+    add: addToArray,
+    getCars: _cars
   }
 })()
 

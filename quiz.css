@@ -1,19 +1,5 @@
 h1{
-  display: inline-block;
-  padding: .7%;
   font-size: 3em;
-}
-
-.banner{
-  border-radius: 10px;
-  border: 2px solid black;
-  background-color: black;
-  color: white;
-}
-
-.instructions{
-  text-align: center;
-  font-size: 1.7em;
 }
 
 .input{
@@ -28,10 +14,6 @@ h1{
   margin-bottom: 15%;
 }
 
-.selected{
-  border: 3px solid black;
-}
-
 input[type="text"]{
   height: 30px;
   margin-right: 5%;
@@ -41,12 +23,12 @@ input[type="text"]{
 }
 
 .active{
-  display: inline-block;
+  /*display: inline-block;*/
   background-color: grey !important;
   color: white;
   border: 3px solid black;
-  padding-right: 2%;
-  padding-left: 2%;
+  padding-right: 1%;
+  padding-left: 1%;
 }
 
 .selected{
@@ -54,8 +36,8 @@ input[type="text"]{
   color: white;
   border: 3px solid black;
   box-shadow: 5px 5px 5px black;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 div.row{
