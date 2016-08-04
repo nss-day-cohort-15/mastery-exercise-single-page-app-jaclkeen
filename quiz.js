@@ -22,6 +22,3 @@ carLot = (function(){
     getCars: _cars
   }
 })()
-
-carLot.loadCar(printCar);
-
