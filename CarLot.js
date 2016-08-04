@@ -30,6 +30,7 @@ function eventListeners(vehicle){
   var container = document.querySelector('#container');
   var input = document.getElementById('input');
   var submit = document.getElementById('submit');
+  var children = [];
 
       submit.addEventListener("click", function(){
         if(e.target.id === 'description'){
@@ -54,5 +55,10 @@ function eventListeners(vehicle){
       var selected_card = e.target;
       selected_card.classList.add('selected');
     }
+  })
+
+  input.addEventListener("input", function(){
+    var content = document.querySelector('.active');
+    content.innerHTML = input.value;
   })
 }
