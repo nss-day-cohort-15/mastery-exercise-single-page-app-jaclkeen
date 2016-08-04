@@ -21,13 +21,21 @@ var carLot = (function(carlot){
         input.value = targetDescription.innerHTML;
         input.focus();
 
+        borderReset();
+        setBorder(e.currentTarget, 'selected');
+      })
+    }
+
+    function borderReset(){
       for(var i = 0; i < container.childNodes.length; i++){
         container.childNodes[i].className = "col-md-4";
-        var selected_card = e.currentTarget;
-        selected_card.classList.add('selected');
       }
-    })
-  } // End of for loop
+    }
+
+    function setBorder(element, color){
+      var selected_card = element;
+      selected_card.classList.add(color);
+    }
 
     input.addEventListener("input", function(e){
       if (targetDescription !== null) {
@@ -35,7 +43,6 @@ var carLot = (function(carlot){
       }
     })
   }
-
 return carLot;
 
 }(carLot||{}))
