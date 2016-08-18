@@ -1,14 +1,17 @@
 carLot = (function(){
   var _cars = [];
 
-  function loadInventory(callback){
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'inventory.json');
-    xhr.addEventListener('load', function(event){
-      _cars = (JSON.parse(event.target.responseText));
-      callback(_cars);
+  function loadInventory(){
+    return new Promise(function(resolve, reject){
+      var xhr = new XMLHttpRequest()
+      xhr.open('GET', 'inventory.json')
+      xhr.send();
+
+      xhr.addEventListener('load', function(){
+        var data = JSON.parse(this.responseText)
+        resolve(data)
+      })
     })
-    xhr.send();
   }
 
   function addToArray(vehicle){

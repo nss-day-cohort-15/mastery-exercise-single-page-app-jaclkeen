@@ -26,12 +26,23 @@ var carLot = (function(carlot){
       display_area.appendChild(vehicle);
       carLot.add(vehicle);
     })
-    carLot.activateEvents();
   }
 
   return carLot;
 
 }(carLot || {}))
 
-carLot.loadCar(carLot.printCar);
+carLot.loadCar(carLot.printCar)
+.then(
+  function(inventoryFromLoadInventoryReslove){
+    carLot.printCar(inventoryFromLoadInventoryReslove)
+    console.log("carPromise", inventoryFromLoadInventoryReslove)
+  },
+  function(reason){
+    console.error('Something went wrong', reason)
+  })
+.then(function(){
+  carLot.activateEvents()
+})
+
 
